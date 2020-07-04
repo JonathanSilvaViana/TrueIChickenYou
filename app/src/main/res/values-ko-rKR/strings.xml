@@ -1,0 +1,601 @@
+<resources>
+    <string name="app_name">아이 친킨 우</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="teste">했어</string>
+    <string name="assuntoemail">아이 친킨 우 - 결점 신고</string>
+    <string name="mensagememail">자세한 결점의 내용을 설명해주세요.</string>
+    <string name="enunciadointentbug">계속하려면 이메일 클라이언트를 선택하고 주세요</string>
+
+    <!--idiomas-->
+    <string name="idioma_portugues">pt</string>
+    <string name="idioma_coreano">ko</string>
+    <string name="idioma_ingles">en</string>
+
+    <!--menus de seleção-->
+
+    <!--nomes das redes sociais-->
+
+    <string-array name="redes_sociais">
+        <item color="#4682e3">트위터</item>
+        <item color="#f0f714">카카오 스토리</item>
+        <item color="#02cc05">닫다</item>
+    </string-array>
+
+    <string name="titlemenunames">이름을 선택하십시오:</string>
+    <string name="titlechickenparts">닭고기 조각을 선택하십시오:</string>
+    <string name="titlethingstodo">무엇을 하고 싶나요?</string>
+    <string name="menu">매뉴</string>
+    <string name="genders">무슨 너 친구(들)의 성별이?</string>
+    <string name="diga_amigos">너의 남사친(들) 어때요?</string>
+    <string name="diga_amigas">너의 여성 친구(들) 어때요?</string>
+    <string name="diga_amigos_e_amigas">너의 이성친구(들) 어때요?</string>
+    <string name="aceite_primeiro">게임하기 전에 약관에 동의해야합니다.</string>
+    <string name="ir_regras">가</string>
+    <string name="depois">더 늦은</string>
+    <string name="motivar">대답하지:</string>
+
+    <!--textos do alertdialog-->
+    <string name="enunciado">앱을 닫기?</string>
+    <string name="querencerrar">이 앱을 닫으시겠습니까?</string>
+    <string name="fechar">닫지</string>
+    <string name="naofechar">안닫지 마라</string>
+
+    <string name="sobre_texto">이 앱은 정보 시스템 학사 학위 취득을 목적으로 만들어졌습니다, 대학 Universidade Estácio de Sá Polo Paraíso de São Paulo에게서 최종 논문 네이고. 앱의 아이디어는 문화적인 것들을 브라질의 농담 있습니다.</string>
+
+    <!--botões-->
+
+    <string name="bt_share_text">공유래</string>
+    <string name="bt_close_text">닫다</string>
+    <string name="bt_play_text">플레이</string>
+    <string name="bt_save_text">저장하다</string>
+    <string name="bt_erase_text">삭제</string>
+    <string name="bt_edit_text">편집하기</string>
+    <string name="bt_view_text">전망</string>
+    <string name="bt_advance_text">다음</string>
+    <string name="bt_back_text">돌아가다</string>
+    <string name="sobre_som">소리:</string>
+    <string name="saved">오케이</string>
+
+    <!--nomes menu slide-->
+
+    <string name="menu_home">홈</string>
+    <string name="menu_see">상담</string>
+    <string name="menu_rules">게임 룰</string>
+    <string name="menu_sobre">게임에 대해</string>
+    <string name="menu_sair">닫다</string>
+
+    <!--nomes labels-->
+
+    <string name="label_options">선택을해라</string>
+    <string name="label_results">결과:</string>
+
+    <string-array name="malenames">
+        <item>지원</item>
+        <item>대현</item>
+        <item>도현</item>
+        <item>동해</item>
+        <item>동현</item>
+        <item>동원</item>
+        <item>도윤</item>
+        <item>건우</item>
+        <item>경호</item>
+        <item>하준</item>
+        <item>현준</item>
+        <item>현우</item>
+        <item>재현</item>
+        <item>재영</item>
+        <item>지호</item>
+        <item>지후</item>
+        <item>진호</item>
+        <item>지섭</item>
+        <item>주원</item>
+        <item>정호</item>
+        <item>정훈</item>
+        <item>준서</item>
+        <item>준우</item>
+        <item>준영</item>
+        <item>주원</item>
+        <item>민규</item>
+        <item>민호</item>
+        <item>민재</item>
+        <item>민준</item>
+        <item>민석</item>
+        <item>민수</item>
+        <item>상훈</item>
+        <item>소준</item>
+        <item>승호</item>
+        <item>승훈</item>
+        <item>승현</item>
+        <item>승민</item>
+        <item>시우</item>
+        <item>성호</item>
+        <item>성훈</item>
+        <item>성진</item>
+        <item>성민</item>
+        <item>태현</item>
+        <item>우진</item>
+        <item>예준</item>
+        <item>용철</item>
+        <item>영재</item>
+        <item>윤우</item>
+        <item>조나단</item>
+        <item>호제</item>
+        <item>훈</item>
+        <item>형곤</item>
+        <item>형수</item>
+        <item>현곤</item>
+        <item>형원</item>
+        <item>현진</item>
+        <item>현중</item>
+        <item>현서</item>
+        <item>재형</item>
+        <item>재인</item>
+        <item>건</item>
+        <item>광희</item>
+        <item>범석</item>
+        <item>법동</item>
+        <item>빛가람</item>
+        <item>보경</item>
+        <item>보희</item>
+        <item>백현</item>
+        <item>봉기</item>
+        <item>민환</item>
+        <item>민혁</item>
+        <item>안종</item>
+        <item>아랜</item>
+        <item>바다</item>
+        <item>백한</item>
+        <item>봉주</item>
+        <item>거인</item>
+        <item>보선</item>
+        <item>보연</item>
+        <item>철</item>
+        <item>앤드류</item>
+        <item>철수</item>
+        <item>칠현</item>
+        <item>가브리엘</item>
+        <item>유다</item>
+        <item>자비에르</item>
+        <item>도마</item>
+        <item>줄리우스</item>
+        <item>아리엘</item>
+        <item>우리</item>
+        <item>부치</item>
+        <item>치원</item>
+        <item>부친</item>
+        <item>충재</item>
+        <item>철순</item>
+        <item>대환</item>
+        <item>대정</item>
+        <item>대석</item>
+        <item>대성</item>
+        <item>대성</item>
+        <item>다현</item>
+        <item>닥현</item>
+        <item>다산</item>
+        <item>달</item>
+        <item>에이조</item>
+        <item>바트</item>
+        <item>갈리아드</item>
+        <item>마르셀</item>
+        <item>사이먼</item>
+        <item>찬열</item>
+        <item>찬솔</item>
+        <item>찬우</item>
+        <item>찬성</item>
+        <item>찬혁</item>
+        <item>창섭</item>
+        <item>창민</item>
+        <item>창균</item>
+        <item>트레버</item>
+        <item>그란티</item>
+        <item>이반</item>
+        <item>병철</item>
+        <item>석범</item>
+        <item>석진</item>
+        <item>병수</item>
+        <item>병희</item>
+        <item>코니야</item>
+        <item>레비</item>
+        <item>별</item>
+        <item>성희</item>
+        <item>윤영</item>
+        <item>윤식</item>
+        <item>호마니</item>
+        <item>서진</item>
+        <item>세훈</item>
+        <item>세호</item>
+        <item>세현</item>
+        <item>세소</item>
+        <item>석영</item>
+        <item>윤서</item>
+        <item>상철</item>
+        <item>상은</item>
+        <item>상우</item>
+        <item>상식</item>
+        <item>남순</item>
+        <item>상혁</item>
+        <item>윤호</item>
+        <item>삼</item>
+        <item>새벽</item>
+        <item>사도</item>
+        <item>려욱</item>
+        <item>오성</item>
+        <item>푸름</item>
+        <item>노을</item>
+        <item>남선</item>
+        <item>남준</item>
+        <item>남국</item>
+        <item>명은</item>
+        <item>다니엘</item>
+        <item>명박</item>
+        <item>경은</item>
+        <item>미르</item>
+        <item>민우</item>
+        <item>민선</item>
+        <item>민경</item>
+        <item>경택</item>
+        <item>마리</item>
+        <item>스티브</item>
+        <item>유리</item>
+        <item>경태</item>
+        <item>경수</item>
+        <item>광수</item>
+        <item>광수</item>
+        <item>광민</item>
+        <item>광조</item>
+        <item>퀀</item>
+        <item>기남</item>
+        <item>기 문</item>
+        <item>키란</item>
+        <item>준형</item>
+        <item>준수</item>
+        <item>준면</item>
+        <item>진솔</item>
+        <item>지두리</item>
+        <item>정혁</item>
+        <item>정한</item>
+        <item>정권</item>
+        <item>정국</item>
+        <item>정은</item>
+        <item>재원</item>
+        <item>재석</item>
+        <item>재섭</item>
+        <item>마리오</item>
+        <item>재상</item>
+        <item>재오</item>
+        <item>재중</item>
+        <item>재진</item>
+        <item>재환</item>
+        <item>재호</item>
+        <item>재희</item>
+        <item>재규</item>
+        <item>재경</item>
+        <item>재덕</item>
+        <item>재범</item>
+        <item>재범</item>
+        <item>이상</item>
+        <item>유리</item>
+        <item>일생</item>
+        <item>일성</item>
+        <item>인수</item>
+        <item>인정</item>
+        <item>인복</item>
+        <item>일훈</item>
+        <item>현수</item>
+        <item>현식</item>
+        <item>현승</item>
+        <item>현성</item>
+    </string-array>
+
+    <string-array name="femalenames">
+        <item>지원</item>
+        <item>채원</item>
+        <item>다혜</item>
+        <item>다은</item>
+        <item>은경</item>
+        <item>은지</item>
+        <item>은주</item>
+        <item>은전</item>
+        <item>은서</item>
+        <item>은영</item>
+        <item>히나타</item>
+        <item>경희</item>
+        <item>경미</item>
+        <item>하은</item>
+        <item>하윤</item>
+        <item>희진</item>
+        <item>희영</item>
+        <item>혜진</item>
+        <item>현주</item>
+        <item>현정</item>
+        <item>린다</item>
+        <item>현영</item>
+        <item>지아</item>
+        <item>지혜</item>
+        <item>지현</item>
+        <item>지은</item>
+        <item>지민</item>
+        <item>지우</item>
+        <item>지영</item>
+        <item>지윤</item>
+        <item>정희</item>
+        <item>정화</item>
+        <item>정현</item>
+        <item>사랑</item>
+        <item>미경</item>
+        <item>민지</item>
+        <item>민정</item>
+        <item>민서</item>
+        <item>아이유</item>
+        <item>민선</item>
+        <item>미영</item>
+        <item>서현</item>
+        <item>서연</item>
+        <item>서윤</item>
+        <item>수빈</item>
+        <item>수진</item>
+        <item>수민</item>
+        <item>선영</item>
+        <item>예은</item>
+        <item>연아</item>
+        <item>유진</item>
+        <item>윤아</item>
+        <item>유나</item>
+        <item>윤서</item>
+        <item>영희</item>
+        <item>영미</item>
+        <item>현선</item>
+        <item>민</item>
+        <item>아나</item>
+        <item>미주</item>
+        <item>민주</item>
+        <item>혜미</item>
+        <item>현아</item>
+        <item>현경</item>
+        <item>현진</item>
+        <item>현서</item>
+        <item>현수</item>
+        <item>현숙</item>
+        <item>혜림</item>
+        <item>혜린</item>
+        <item>교림</item>
+        <item>규림</item>
+        <item>혜연</item>
+        <item>혜윤</item>
+        <item>혜수</item>
+        <item>인희</item>
+        <item>티나</item>
+        <item>인혜</item>
+        <item>디아나</item>
+        <item>인현</item>
+        <item>인정</item>
+        <item>인나</item>
+        <item>인숙</item>
+        <item>인영</item>
+        <item>이영</item>
+        <item>재은</item>
+        <item>재경</item>
+        <item>인경</item>
+        <item>재규</item>
+        <item>재희</item>
+        <item>재인</item>
+        <item>장미</item>
+        <item>자연</item>
+        <item>정아</item>
+        <item>정애</item>
+        <item>정은</item>
+        <item>정혜</item>
+        <item>정자</item>
+        <item>지애</item>
+        <item>지해</item>
+        <item>지두리</item>
+        <item>지호</item>
+        <item>진아</item>
+        <item>진솔</item>
+        <item>광희</item>
+        <item>경숙</item>
+        <item>경자</item>
+        <item>유리코</item>
+        <item>경은</item>
+        <item>마유미</item>
+        <item>경화</item>
+        <item>마리</item>
+        <item>사야</item>
+        <item>미혜</item>
+        <item>미현</item>
+        <item>미정</item>
+        <item>미진</item>
+        <item>마주</item>
+        <item>미주</item>
+        <item>미나</item>
+        <item>민아</item>
+        <item>민기</item>
+        <item>민경</item>
+        <item>민진</item>
+        <item>민준</item>
+        <item>미래</item>
+        <item>미란</item>
+        <item>명은</item>
+        <item>명화</item>
+        <item>나비</item>
+        <item>나미</item>
+        <item>난희</item>
+        <item>나라</item>
+        <item>누리</item>
+        <item>노을</item>
+        <item>니헤에</item>
+        <item>나영</item>
+        <item>남순</item>
+        <item>남선</item>
+        <item>나연</item>
+        <item>미카사</item>
+        <item>나예</item>
+        <item>나래</item>
+        <item>남주</item>
+        <item>노유</item>
+        <item>푸름</item>
+        <item>라온</item>
+        <item>라움</item>
+        <item>루리</item>
+        <item>기</item>
+        <item>윤희</item>
+        <item>윤혜</item>
+        <item>윤형</item>
+        <item>유래</item>
+        <item>샛별</item>
+        <item>새별</item>
+        <item>새벽</item>
+        <item>새론</item>
+        <item>유라</item>
+        <item>삼순</item>
+        <item>삼순</item>
+        <item>산다라</item>
+        <item>세미</item>
+        <item>삼</item>
+        <item>새롬</item>
+        <item>윤영</item>
+        <item>상은</item>
+        <item>윤나</item>
+        <item>윤지</item>
+        <item>다니엘아</item>
+        <item>서향</item>
+        <item>서진</item>
+        <item>서정원</item>
+        <item>세현</item>
+        <item>석영</item>
+        <item>다니엘스</item>
+        <item>성희</item>
+    </string-array>
+
+    <!--não usar esse string array mesmo na versão coreana-->
+    <string-array name="chickenparts">
+        <item> </item>
+        <item>볏</item>
+        <item>눈</item>
+        <item>부리</item>
+        <item>사낭</item>
+        <item>날개</item>
+        <item>Asas</item>
+        <item>Plumagem</item>
+        <item>가슴살</item>
+        <item>위</item>
+        <item>심장</item>
+        <item>간</item>
+        <item>Tripas</item>
+        <item>머리</item>
+        <item>피부</item>
+        <item>발톱</item>
+        <item>Garras</item>
+        <item>닭 허벅지</item>
+        <item>Coxas</item>
+        <item>닭 다리</item>
+        <item>혀</item>
+        <item>발가락</item>
+        <item>닭 발</item>
+    </string-array>
+
+    <string-array name="chickenparts_Korean_use_only">
+        <item> - </item>
+        <item>볏</item>
+        <item>눈</item>
+        <item>부리</item>
+        <item>사낭</item>
+        <item>날개</item>
+        <item>깃털들</item>
+        <item>가슴살</item>
+        <item>위</item>
+        <item>심장</item>
+        <item>간</item>
+        <item>닭 내장</item>
+        <item>머리</item>
+        <item>피부</item>
+        <item>발톱</item>
+        <item>닭 허벅지</item>
+        <item>닭 다리</item>
+        <item>혀</item>
+        <item>발가락</item>
+        <item>닭 발</item>
+
+    </string-array>
+
+    <string-array name="thingstodo">
+        <item>축구해요</item>
+        <item>자요</item>
+        <item>밖에 나가요</item>
+        <item>노래요</item>
+        <item>울고있어요</item>
+        <item>먹어요</item>
+        <item>사요</item>
+        <item>정복해요</item>
+        <item>키스해요</item>
+        <item>다이트해요</item>
+        <item>쇼핑 가요</item>
+        <item>졸린해요</item>
+        <item>마사지해요</item>
+        <item>플레이해요</item>
+        <item>게임을 해요</item>
+        <item>서핑을 해요</item>
+        <item>수영해요</item>
+        <item>농구해요</item>
+        <item>배구를해요</item>
+        <item>철썩 때리다</item>
+        <item>이야기해요</item>
+        <item>유혹해요</item>
+        <item>사랑해요</item>
+        <item>마셔요</item>
+        <item>닫아요</item>
+        <item>아파요</item>
+        <item>읽어해요</item>
+        <item>일해요</item>
+        <item>공부해요</item>
+        <item>보고있어요</item>
+        <item>감탄으세요</item>
+        <item>도와해요</item>
+        <item>먹이로해요</item>
+        <item>저녁 먹래요</item>
+        <item>점심해요</item>
+        <item>가져요</item>
+        <item>다녀요</item>
+        <item>꿈 해요</item>
+        <item>야구 해요</item>
+        <item>비명 해요</item>
+        <item>다이빙을해요</item>
+        <item>발견하다</item>
+        <item>스키 타고 있어요</item>
+        <item>트롤 해요</item>
+        <item>놀아요</item>
+        <item>조직화해요</item>
+        <item>정리해요</item>
+        <item>그림 그려요</item>
+    </string-array>
+
+    <string name="title_activity_menu">아이 친킨 우</string>
+    <string name="navigation_drawer_open">탐색 창 열기</string>
+    <string name="navigation_drawer_close">탐색 창 닫기</string>
+    <string name="nav_header_title">대단한 App!</string>
+    <string name="nav_header_subtitle">데벨로페의 메일: jonathansilva@daum.net</string>
+    <string name="nav_header_desc">탐색 헤더</string>
+    <string name="action_settings">설정</string>
+    <string name="termos">이 앱의 약관에 동의하십니까?</string>
+    <string name="aceito">동의해요</string>
+    <string name="recuso">거절할게</string>
+    <string name="grato">고마워요!</string>
+    <string name="aindasimgrato">고맙지만 이 앱은 프로그램을 제거하십시오.</string>
+
+    <string-array name="therules">
+        <item>1 - 이 응용 프로그램을 사용하여 친구와 함께 또는 혼자 재미있게 즐기십시오.</item>
+        <item>2 - 저자와 법적 소유자는 최종 사용자의 관련 작업에 대해 책임을 지지 않습니다.</item>
+        <item>3 - 개발자 및 법적 소유자와 상담하지 않고 이 프로젝트를 복사하거나 자신의 프로젝트를 만들지 마세요.</item>
+        <item>4 - 이 프로젝트의 기반이 된 문화를 훼손하지 마십시오.</item>
+        <item>5 - 프로젝트와 관련된 제안 사항은 현재 Google Playstore로 알려진 Google / Alphabet 앱 스토어에 댓글을 달아야 합니다.</item>
+        <item>6 - 전파 또는 제 3 자에 의해이 앱 그의 개념을 폄하(가치를 깍아내림)하지 않는다면 모든 애플리케이션의 선전(광고)은 허용됩니다.</item>
+        <item>7 - 어떠한 의견의 대립이나 (상대방을) 불쾌하게 하려는 의도라고 할 것도 없이 이 앱을 사용해서 결과적으로 얻을 수 있는 건 가치없는 이야기들 뿐 이라는 걸 알아둬합니다.</item>
+        <item>8 - 최종 사용자는 이 응용 프로그램에서 사용된 모든 결과에 대하여 고유한 법적 책임이 있습니다.</item>
+    </string-array>
+    <string name="choose_social_destination">어디에 샤레하고 싶어요?</string>
+
+</resources>
