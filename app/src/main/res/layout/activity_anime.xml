@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/danca_de_rua"
+        android:background="#fff"
+        />
+
+    <TextView
+        android:id="@+id/apresentcao_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:fontFamily="@font/looneytunes"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:layout_marginLeft="0sp"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>
