@@ -26,12 +26,15 @@ public class AnimeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anime);
 
+        comSom();
+
         new Handler().postDelayed(new Runnable() {
                                       @Override
                                       public void run() {
                                           Intent saidasplashscreen = new Intent(AnimeActivity.this,
                                                   MainActivity.class );
                                           startActivity(saidasplashscreen);
+
                                           finish();
                                       }
                                   },
@@ -43,7 +46,7 @@ public class AnimeActivity extends AppCompatActivity {
     public void comSom()
     {
         //dentro do contexto da aplicação seleciona o audio desejado
-        //mp = MediaPlayer.create(this, R.som.abertura);
+        mp = MediaPlayer.create(this, R.raw.abertura);
         //ativa o som para o início de jogo
         mp.start();
     }
