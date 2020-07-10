@@ -1,9 +1,11 @@
 package br.com.ichickenyou.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,11 +13,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import br.com.ichickenyou.AnimeActivity;
 import br.com.ichickenyou.R;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+
+    Button bt_play;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +34,16 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        bt_play = (Button) root.findViewById(R.id.bt_play);
+
+        bt_play.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                //envia para uma nova activity
+                startActivity(new Intent(getContext(), AnimeActivity.class));
+            }
+        });
+
         return root;
     }
 }
