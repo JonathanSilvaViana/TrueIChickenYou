@@ -3,6 +3,7 @@ package br.com.ichickenyou.ui.home;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +16,17 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import br.com.ichickenyou.AnimeActivity;
+import br.com.ichickenyou.MainActivity;
 import br.com.ichickenyou.R;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+    private static int SPLASH_TIME_OUT = 2665;
 
     Button bt_play;
     MediaPlayer mp;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -44,9 +48,17 @@ public class HomeFragment extends Fragment {
 
                 comSom();
 
-                //envia para uma nova activity
-                //startActivity(new Intent(getContext(), AnimeActivity.class));
+                new Handler().postDelayed(new Runnable() {
+                                              @Override
+                                              public void run() {
+                                                  //envia para uma nova activity
+                                                  startActivity(new Intent(getContext(), AnimeActivity.class));
 
+                                                  //finish();
+                                              }
+                                          },
+                        //encerra o tempo de exibição
+                        SPLASH_TIME_OUT);
 
             }
         });
