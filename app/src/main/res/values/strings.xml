@@ -182,12 +182,20 @@
     <string name="choose_social_destination">Which social network?</string>
     <string name="Twitter" translatable="false">Twitter</string>
     <string name="Kakao" translatable="false">Kakao</string>
+    <string name="title_activity_gender">GenderActivity</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string-array name="redes_sociais">
         <item color="#4682e3">Twitter</item>
         <item color="#f0f714">Kakao</item>
         <item color="#02cc05">Close</item>
     </string-array>
-
+    <!-- Strings used for fragments for navigation -->
     <string-array name="malenames">
         <item>Adrian</item>
         <item>Antonio</item>
@@ -633,6 +641,7 @@
         <item>닭 발</item>
 
     </string-array>
+
     <string-array name="thingstodo">
         <item>play soccer</item>
         <item>sleep</item>

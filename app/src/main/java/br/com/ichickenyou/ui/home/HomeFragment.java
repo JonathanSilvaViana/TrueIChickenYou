@@ -15,8 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import br.com.ichickenyou.AnimeActivity;
-import br.com.ichickenyou.MainActivity;
+import br.com.ichickenyou.GenderActivity;
 import br.com.ichickenyou.R;
 
 public class HomeFragment extends Fragment {
@@ -52,7 +51,8 @@ public class HomeFragment extends Fragment {
                                               @Override
                                               public void run() {
                                                   //envia para uma nova activity
-                                                  startActivity(new Intent(getContext(), AnimeActivity.class));
+                                                  startActivity(new Intent(getContext(), GenderActivity.class));
+
 
                                                   //finish();
                                               }
