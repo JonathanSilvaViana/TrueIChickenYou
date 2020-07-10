@@ -1,6 +1,7 @@
 package br.com.ichickenyou.ui.home;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,7 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
 
     Button bt_play;
+    MediaPlayer mp;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -39,11 +41,24 @@ public class HomeFragment extends Fragment {
 
         bt_play.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
+
+                comSom();
+
                 //envia para uma nova activity
-                startActivity(new Intent(getContext(), AnimeActivity.class));
+                //startActivity(new Intent(getContext(), AnimeActivity.class));
+
+
             }
         });
 
         return root;
+    }
+
+    public void comSom()
+    {
+        //dentro do contexto da aplicação seleciona o audio desejado
+        mp = MediaPlayer.create(getContext(), R.raw.play);
+        //ativa o som para o início de jogo
+        mp.start();
     }
 }
