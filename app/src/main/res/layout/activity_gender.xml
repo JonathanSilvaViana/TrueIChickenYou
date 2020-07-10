@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:fontFamily="@font/looneytunes"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_height="wrap_content"
         android:text="@string/genders" />
 
