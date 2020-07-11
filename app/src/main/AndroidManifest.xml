@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GenderActivity"></activity>
+        <activity android:name=".GenderActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".AnimeActivity"
             android:screenOrientation="portrait"
