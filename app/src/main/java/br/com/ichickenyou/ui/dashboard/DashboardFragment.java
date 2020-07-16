@@ -1,6 +1,7 @@
 package br.com.ichickenyou.ui.dashboard;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -27,6 +28,9 @@ public class DashboardFragment extends Fragment {
 
     String idioma_coreano, outros_idiomas, preferencia_som, com_som, sem_som, ativo, desativado, meuemail, assunto, mensagem, enunciadoIntentReportEmail;
 
+    MediaPlayer mp;
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel =
@@ -45,6 +49,7 @@ public class DashboardFragment extends Fragment {
         bug_bt.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
 
+                comSom();
                 reportaviaemail();
 
             }
@@ -86,5 +91,13 @@ public class DashboardFragment extends Fragment {
         //inicia o serviço do intent
         startActivity(Intent.createChooser(bug_email_report, enunciadoIntentReportEmail));
 
+    }
+
+    public void comSom()
+    {
+        //dentro do contexto da aplicação seleciona o audio desejado
+        mp = MediaPlayer.create(getContext(), R.raw.telaazulsomwindows);
+        //ativa o som para o início de jogo
+        mp.start();
     }
 }
