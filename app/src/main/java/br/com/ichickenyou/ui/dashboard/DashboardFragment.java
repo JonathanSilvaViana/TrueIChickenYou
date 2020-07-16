@@ -40,7 +40,7 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-        bug_bt = (ImageButton) root.findViewById(R.id.BugButton);
+        bug_bt = (ImageButton) root.findViewById(R.id.bug_bt);
 
         bug_bt.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {

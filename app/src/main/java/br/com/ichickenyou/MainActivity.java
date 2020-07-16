@@ -1,7 +1,10 @@
 package br.com.ichickenyou;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -34,6 +37,28 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.navigation_home:
+                Log.d("home", "home fragment");
+                return true;
+            case R.id.navigation_dashboard:
+                Log.d("settings", "settings fragment");
+                return true;
+            case R.id.navigation_notifications:
+                Log.d("notifications", "notifications fragment");
+                return true;
+            case R.id.navigation_finish:
+                Log.d("finish", "finish fragment");
+                Toast.makeText(this, "finish", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }
