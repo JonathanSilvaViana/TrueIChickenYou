@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
         alertDialogBuilder.setTitle(R.string.enunciado);
         alertDialogBuilder
                 //define um enunciado
-                .setMessage(R.string.querencerrar)
                 .setCancelable(false)
                 //define o botão de encerramento da aplicação
                 .setPositiveButton(R.string.fechar,

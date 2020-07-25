@@ -20,12 +20,12 @@
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="br.com.ichickenyou.ui.notifications.NotificationsFragment"
-        android:label="@string/menu_rules"
+        android:label="@string/menu_sobre"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/navigation_finish"
         android:name="br.com.ichickenyou.ui.Finish.FinishFragment"
-        android:label="@string/menu_rules"
+        android:label="@string/menu_sair"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
