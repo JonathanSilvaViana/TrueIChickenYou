@@ -17,14 +17,15 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import br.com.ichickenyou.GenderActivity;
 import br.com.ichickenyou.R;
+import br.com.ichickenyou.SomActivity;
 
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
 
-    Intent bug_email_report;
+    Intent bug_email_report, envia_som;
 
-    ImageButton bug_bt;
+    ImageButton bug_bt, music_bt;
 
     String idioma_coreano, outros_idiomas, preferencia_som, com_som, sem_som, ativo, desativado, meuemail, assunto, mensagem, enunciadoIntentReportEmail;
 
@@ -44,6 +45,8 @@ public class DashboardFragment extends Fragment {
             }
         });
 
+        //bug
+
         bug_bt = (ImageButton) root.findViewById(R.id.bug_bt);
 
         bug_bt.setOnClickListener(new View.OnClickListener(){
@@ -52,6 +55,17 @@ public class DashboardFragment extends Fragment {
                 comSom();
                 reportaviaemail();
 
+            }
+        });
+
+        //som
+
+        music_bt = (ImageButton) root.findViewById(R.id.music_bt);
+
+        music_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                enviaparaSom();
             }
         });
 
@@ -99,5 +113,11 @@ public class DashboardFragment extends Fragment {
         mp = MediaPlayer.create(getContext(), R.raw.telaazulsomwindows);
         //ativa o som para o início de jogo
         mp.start();
+    }
+
+    public void enviaparaSom()
+    {
+        envia_som = new Intent(getActivity(), SomActivity.class);
+        startActivity(envia_som);
     }
 }
