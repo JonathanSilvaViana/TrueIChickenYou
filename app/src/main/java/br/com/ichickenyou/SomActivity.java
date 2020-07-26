@@ -10,5 +10,8 @@ public class SomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_som);
+
+        //define título da activity
+        setTitle(R.string.sobre_som);
     }
 }
