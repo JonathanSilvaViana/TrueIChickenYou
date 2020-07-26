@@ -17,15 +17,16 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import br.com.ichickenyou.GenderActivity;
 import br.com.ichickenyou.R;
+import br.com.ichickenyou.RegrasActivity;
 import br.com.ichickenyou.SomActivity;
 
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
 
-    Intent bug_email_report, envia_som;
+    Intent bug_email_report, envia_som, envia_para_regras;
 
-    ImageButton bug_bt, music_bt;
+    ImageButton bug_bt, music_bt, rules_bt;
 
     String idioma_coreano, outros_idiomas, preferencia_som, com_som, sem_som, ativo, desativado, meuemail, assunto, mensagem, enunciadoIntentReportEmail;
 
@@ -69,6 +70,17 @@ public class DashboardFragment extends Fragment {
             }
         });
 
+        //regras
+
+        rules_bt = (ImageButton) root.findViewById(R.id.rules_bt);
+
+        rules_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                enviaparaRegras();
+            }
+        });
+
 
         return root;
     }
@@ -107,7 +119,7 @@ public class DashboardFragment extends Fragment {
 
     }
 
-    public void comSom()
+    private void comSom()
     {
         //dentro do contexto da aplicação seleciona o audio desejado
         mp = MediaPlayer.create(getContext(), R.raw.telaazulsomwindows);
@@ -115,9 +127,15 @@ public class DashboardFragment extends Fragment {
         mp.start();
     }
 
-    public void enviaparaSom()
+    private void enviaparaSom()
     {
         envia_som = new Intent(getActivity(), SomActivity.class);
         startActivity(envia_som);
+    }
+
+    private void enviaparaRegras()
+    {
+        envia_para_regras = new Intent(getActivity(), RegrasActivity.class);
+        startActivity(envia_para_regras);
     }
 }
