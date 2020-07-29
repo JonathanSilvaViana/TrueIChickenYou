@@ -1,9 +1,12 @@
 package br.com.ichickenyou.ui.home;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +28,9 @@ public class HomeFragment extends Fragment {
 
     Button bt_play;
     MediaPlayer mp;
+    SharedPreferences som;
+    String idioma_coreano, outros_idiomas, preferencia_som, ativo, desativado;
+    boolean se_idioma_coreano;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -68,9 +74,28 @@ public class HomeFragment extends Fragment {
 
     public void comSom()
     {
-        //dentro do contexto da aplicação seleciona o audio desejado
-        mp = MediaPlayer.create(getContext(), R.raw.play);
-        //ativa o som para o início de jogo
-        mp.start();
+        //string que serve de nome para o arquivo de preferências
+        preferencia_som = "Preferencia_som";
+        //coleta o arquivo de preferências via a activity que mantém o fragment
+        som = getActivity().getSharedPreferences(preferencia_som, Context.MODE_PRIVATE);
+        //abaixo as strings que denotam por nome os estados contidos no arquivo de preferências
+        ativo = "ATIVADO";
+        desativado = "DESATIVADO";
+
+        //cria condicional
+        if (som.contains(ativo) == true && som.contains(desativado) == false) {
+
+            //dentro do contexto da aplicação seleciona o audio desejado
+            mp = MediaPlayer.create(getContext(), R.raw.play);
+            //ativa o som para o início de jogo
+            mp.start();
+
+        }
+
+        else
+        {
+            //se a opção de audio desativado for verdadeira, então a função faz um log no aplicativo
+            Log.d("audio desativado", "audio desativado para tocar o som de play");
+        }
     }
 }
