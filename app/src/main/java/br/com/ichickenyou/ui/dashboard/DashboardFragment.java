@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import br.com.ichickenyou.CRUDActivity;
 import br.com.ichickenyou.GenderActivity;
 import br.com.ichickenyou.R;
 import br.com.ichickenyou.RegrasActivity;
@@ -24,9 +25,9 @@ public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
 
-    Intent bug_email_report, envia_som, envia_para_regras;
+    Intent bug_email_report, envia_som, envia_para_regras, envia_para_crud;
 
-    ImageButton bug_bt, music_bt, rules_bt;
+    ImageButton bug_bt, music_bt, rules_bt, crud_bt;
 
     String idioma_coreano, outros_idiomas, preferencia_som, com_som, sem_som, ativo, desativado, meuemail, assunto, mensagem, enunciadoIntentReportEmail;
 
@@ -78,6 +79,15 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 enviaparaRegras();
+            }
+        });
+
+        crud_bt = (ImageButton) root.findViewById(R.id.crud_bt);
+
+        crud_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Envia_para_crud();
             }
         });
 
@@ -137,5 +147,11 @@ public class DashboardFragment extends Fragment {
     {
         envia_para_regras = new Intent(getActivity(), RegrasActivity.class);
         startActivity(envia_para_regras);
+    }
+
+    private void Envia_para_crud()
+    {
+        envia_para_crud = new Intent(getActivity(), CRUDActivity.class);
+        startActivity(envia_para_crud);
     }
 }
