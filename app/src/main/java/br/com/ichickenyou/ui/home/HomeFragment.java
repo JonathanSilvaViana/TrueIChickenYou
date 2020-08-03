@@ -172,6 +172,14 @@ public class HomeFragment extends Fragment {
 
         }
 
+        else if (som.contains(ativo) == false && som.contains(desativado) == false)
+        {
+            //dentro do contexto da aplicação seleciona o audio desejado
+            mp = MediaPlayer.create(getActivity(), R.raw.play);
+            //ativa o som para o início de jogo
+            mp.start();
+        }
+
         else
         {
             //se a opção de audio desativado for verdadeira, então a função faz um log no aplicativo

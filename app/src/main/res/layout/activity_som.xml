@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_marginStart="1in"
             android:textSize="20sp"
+            android:checked="true"
             android:textColor="@color/cardview_light_background"
             android:fontFamily="@font/looneytunes"
             android:layout_height="wrap_content"
