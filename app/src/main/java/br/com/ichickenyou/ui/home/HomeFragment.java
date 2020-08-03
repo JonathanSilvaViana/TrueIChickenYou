@@ -1,6 +1,7 @@
 package br.com.ichickenyou.ui.home;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
@@ -12,9 +13,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -24,12 +27,12 @@ import br.com.ichickenyou.R;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-    private static int SPLASH_TIME_OUT = 2665;
-
+    private static int SPLASH_TIME_OUT = 2665, tempo_encerramento = 0;
     Button bt_play;
+    Handler posicionador = new Handler();
     MediaPlayer mp;
-    SharedPreferences som;
-    String idioma_coreano, outros_idiomas, preferencia_som, ativo, desativado;
+    SharedPreferences som, aceite;
+    String idioma_coreano, outros_idiomas, preferencia_som, ativo, desativado, caminho_aceito;
     boolean se_idioma_coreano;
 
 
@@ -51,20 +54,20 @@ public class HomeFragment extends Fragment {
         bt_play.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
 
-                comSom();
+                    comSom();
 
-                new Handler().postDelayed(new Runnable() {
-                                              @Override
-                                              public void run() {
-                                                  //envia para uma nova activity
-                                                  startActivity(new Intent(getContext(), GenderActivity.class));
+                    new Handler().postDelayed(new Runnable() {
+                                                  @Override
+                                                  public void run() {
+                                                      //envia para uma nova activity
+                                                      startActivity(new Intent(getContext(), GenderActivity.class));
 
 
-                                                  //finish();
-                                              }
-                                          },
-                        //encerra o tempo de exibição
-                        SPLASH_TIME_OUT);
+                                                      //finish();
+                                                  }
+                                              },
+                            //encerra o tempo de exibição
+                            SPLASH_TIME_OUT);
 
             }
         });

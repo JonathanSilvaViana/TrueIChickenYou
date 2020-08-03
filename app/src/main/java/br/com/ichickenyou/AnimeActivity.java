@@ -70,6 +70,15 @@ public class AnimeActivity extends AppCompatActivity {
             //ativa o som para o início de jogo
             mp.start();
         }
+
+        else if (som.contains(ativo) == false && som.contains(desativado) == false)
+        {
+            //dentro do contexto da aplicação seleciona o audio desejado
+            mp = MediaPlayer.create(this, R.raw.abertura);
+            //ativa o som para o início de jogo
+            mp.start();
+        }
+
         else
         {
             //se a opção de audio desativado for verdadeira, então a função faz um log no aplicativo
