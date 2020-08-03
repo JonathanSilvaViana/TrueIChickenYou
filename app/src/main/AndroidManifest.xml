@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CRUDActivity"
-            android:parentActivityName=".MainActivity"
+        <activity
+            android:name=".QuizGenderActivity"
+            android:parentActivityName=".GenderActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CRUDActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RegrasActivity"
             android:parentActivityName=".MainActivity"
