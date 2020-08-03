@@ -23,6 +23,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import br.com.ichickenyou.GenderActivity;
 import br.com.ichickenyou.R;
+import br.com.ichickenyou.RegrasActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -32,8 +33,9 @@ public class HomeFragment extends Fragment {
     Handler posicionador = new Handler();
     MediaPlayer mp;
     SharedPreferences som, aceite;
-    String idioma_coreano, outros_idiomas, preferencia_som, ativo, desativado, caminho_aceito;
+    String idioma_coreano, outros_idiomas, preferencia_som, ativo, desativado, caminho_aceito, aceito;
     boolean se_idioma_coreano;
+    Intent vaiaostermos;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -59,9 +61,9 @@ public class HomeFragment extends Fragment {
                     new Handler().postDelayed(new Runnable() {
                                                   @Override
                                                   public void run() {
-                                                      //envia para uma nova activity
-                                                      startActivity(new Intent(getContext(), GenderActivity.class));
+                                                      //envia para uma nova activity a partir do método a seguir
 
+                                                      checaAceite();
 
                                                       //finish();
                                                   }
@@ -75,7 +77,82 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-    public void comSom()
+    private void checaAceite()
+    {
+        //caminho do nome de arquivo de preferências
+        caminho_aceito = "ACEITE";
+        //coleta o arquivo de preferências via a activity que mantém o fragment
+        aceite = getActivity().getSharedPreferences(caminho_aceito, Context.MODE_PRIVATE);
+        //string de aceite
+        aceito = "ACEITO";
+
+        if (aceite.contains(aceito) == true)
+        {
+            startActivity(new Intent(getContext(), GenderActivity.class));
+            Log.d("vigente", "termos aceitos");
+        }
+        else
+        {
+            //cria um menu que questiona o usuário se deseja aceitar as regras do aplicativo caso existam, ou se prefere deixar para um momento posterior
+
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
+
+            //define o título
+
+            alertDialogBuilder.setTitle(R.string.aceite_primeiro);
+
+            alertDialogBuilder
+
+                    //define o subtítulo
+
+                    .setMessage(R.string.motivar)
+
+                    .setCancelable(false)
+
+                    //botão que o usuário pode deixar para decidir posteriormente
+
+                    .setPositiveButton(R.string.depois,
+
+                            new DialogInterface.OnClickListener() {
+
+                                public void onClick(DialogInterface dialog, int id) {
+
+                                    getActivity().moveTaskToBack(true);
+
+                                    //mata o processo
+
+                                    android.os.Process.killProcess(android.os.Process.myPid());
+
+                                    //minimiza o aplicativo similar a uma função de sair
+
+                                    System.exit(1);
+
+                                }
+
+                            })
+
+                    .setNegativeButton(R.string.ir_regras, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                            //envia a activity de termos
+                            vaiaostermos = new Intent(getActivity(), RegrasActivity.class);
+                            startActivity(vaiaostermos);
+
+                        }
+                    });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+
+            //exibe o componente de menu dialog
+
+            alertDialog.show();
+
+        }
+
+    }
+
+    private void comSom()
     {
         //string que serve de nome para o arquivo de preferências
         preferencia_som = "Preferencia_som";
