@@ -12,4 +12,19 @@
         android:text="any"
         />
 
+    <ScrollView
+        android:id="@+id/scrollView_content_friends"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent" >
+
+        <include
+            layout="@layout/corpo_quiz"
+            android:layout_marginTop="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/titlemenunames"
+        android:fontFamily="@font/looneytunes"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:id="@+id/texto_sobre_amigo"
+        >
+    </TextView>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/nome_autocomplete"
+        android:layout_width="match_parent"
+        android:completionThreshold="3"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="55dp"
+        />
+
+    <TextView
+        android:layout_marginTop="155dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titlechickenparts"
+        android:fontFamily="@font/looneytunes"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:id="@+id/texto_parte_galinha" />
+
+    <Spinner
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:id="@+id/menu_partes_galinha"
+        android:spinnerMode="dropdown"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:entries="@array/chickenparts"
+        android:layout_marginTop="200dp"
+        />
+
+    <TextView
+        android:id="@+id/texto_nome_amigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:fontFamily="@font/looneytunes"
+        android:text="@string/titlethingstodo"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/fazer_autocomplete"
+        android:layout_width="match_parent"
+        android:completionThreshold="3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="" />
+
+
+</RelativeLayout>

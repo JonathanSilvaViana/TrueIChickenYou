@@ -22,7 +22,7 @@
         android:layout_marginTop="50dp"
         android:textColor="#000"
         android:layout_marginLeft="0sp"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textAlignment="center"
         />
 

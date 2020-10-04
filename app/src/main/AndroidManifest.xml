@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnyGenderQuizActivity"></activity>
-        <activity android:name=".FemaleQuizActivity" />
-        <activity android:name=".MaleQuizActivity" />
+        <activity android:name=".AnyGenderQuizActivity"
+            android:parentActivityName=".GenderActivity">
+        </activity>
+        <activity android:name=".FemaleQuizActivity"
+            android:parentActivityName=".GenderActivity"/>
+        <activity android:name=".MaleQuizActivity"
+            android:parentActivityName=".GenderActivity" />
         <activity
             android:name=".CRUDActivity"
             android:parentActivityName=".MainActivity"
